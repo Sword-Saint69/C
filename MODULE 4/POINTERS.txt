@@ -1,0 +1,45 @@
+What is a pointer in C and how is it declared?
+A pointer is a variable that stores the memory address of another variable. It is declared using the * operator. Example: int *ptr;
+
+Explain the use of & and * operators in pointer manipulation.
+& (address-of) operator gives the address of a variable. * (dereference) operator accesses the value at the address stored in a pointer.
+
+What is a NULL pointer? Why is it used?
+A NULL pointer is a pointer that does not point to any valid memory location. It is used to initialize pointers and to check if a pointer is pointing to a valid address before dereferencing.
+
+How is a pointer initialized? Give an example.
+A pointer can be initialized by assigning it the address of a variable. Example: int a = 10; int *p = &a;
+
+Write the advantages and disadvantages of using pointers.
+Advantages: Efficient array and string handling, dynamic memory allocation, facilitates data structures like linked lists and trees, enables pass by reference.
+Disadvantages: Can lead to complex code, risk of memory leaks, dangling pointers, and segmentation faults if misused.
+
+What is a pointer to a pointer? How does it work?
+A pointer to a pointer is a variable that stores the address of another pointer. Example: int **pp; It allows indirect access to variables and is used in dynamic memory allocation and multidimensional arrays.
+
+How can you access an array using a pointer?
+By assigning the array name to a pointer and using pointer arithmetic. Example: int arr[5]; int *p = arr; Access elements as *(p + i).
+
+Explain the concept of "pass by reference" using pointers.
+By passing the address of a variable to a function (using pointers), the function can modify the original variable's value.
+
+Predict the output of a program using a double pointer.
+The output depends on the program, but generally, a double pointer allows access to the value of a pointer variable.
+
+What is the difference between *ptr = &a and ptr = &a?
+*ptr = &a is invalid (unless ptr is a pointer to a pointer). ptr = &a assigns the address of a to the pointer ptr.
+
+How do you use pointers to swap two variables?
+By passing the addresses of the variables to a function and swapping their values using dereferencing.
+
+How do pointers help in dynamic memory allocation?
+Pointers are used with malloc, calloc, realloc, and free functions to allocate and deallocate memory at runtime.
+
+What are the memory sizes of pointers for int, float, etc.?
+The size of any pointer (int*, float*, etc.) is typically the same for a given system (e.g., 4 bytes on 32-bit, 8 bytes on 64-bit systems).
+
+What are the uses of NULL in pointer-based programs?
+NULL is used to initialize pointers, check for uninitialized or invalid pointers, and indicate the end of data structures like linked lists.
+
+How do you sum an array of numbers using a pointer
+By iterating through the array using a pointer and adding the values: int sum = 0; int *p = arr; for (int i = 0; i < n; i++) sum += *(p + i);

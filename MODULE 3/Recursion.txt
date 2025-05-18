@@ -1,0 +1,23 @@
+What is recursion in C programming?
+Recursion in C programming is a technique where a function calls itself directly or indirectly to solve a problem. It is commonly used to solve problems that can be broken down into smaller, similar subproblems.
+
+Explain the process of recursion with an example.
+In recursion, a function solves a small part of the problem and then calls itself with a simpler or smaller input. This continues until a base case is reached, which stops further recursive calls.
+
+Example: Calculating factorial of a number using recursion
+int factorial(int n) {
+    if (n == 0 || n == 1)
+        return 1; // base case
+    else
+        return n * factorial(n - 1); // recursive call
+}
+
+What are the advantages and disadvantages of using recursion?
+Advantages:
+- Simplifies code for problems that are naturally recursive (e.g., tree traversal, factorial, Fibonacci)
+- Reduces code size for certain problems
+
+Disadvantages:
+- Uses more memory due to function call stack
+- Can be less efficient than iterative solutions
+- Risk of stack overflow if recursion depth is too high

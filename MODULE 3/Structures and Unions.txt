@@ -1,0 +1,32 @@
+What is a structure in C programming?
+A structure in C is a user-defined data type that allows grouping variables of different types under a single name.
+
+How do you define a structure in C?
+A structure is defined using the struct keyword. Example:
+struct Student {
+    int roll;
+    char name[50];
+    float marks;
+};
+
+
+What is the difference between an array and a structure in C?
+- An array stores multiple values of the same data type, while a structure can store values of different data types.
+- Arrays use a single name for a collection of similar items; structures group different items under one name.
+
+What is a union in C programming?
+A union is a user-defined data type similar to a structure, but all its members share the same memory location. Only one member can contain a value at any given time.
+
+How do you define a union in C?
+A union is defined using the union keyword. Example:
+union Data {
+    int i;
+    float f;
+    char str[20];
+};
+
+
+What are the differences between structures and unions in C?
+- In structures, each member has its own memory location; in unions, all members share the same memory location.
+- Structures can store multiple values at once; unions can store only one value at a time.
+- The size of a structure is the sum of the sizes of its members; the size of a union is the size of its largest member.

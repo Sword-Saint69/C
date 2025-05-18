@@ -1,0 +1,45 @@
+What is the need for file handling in C?
+File handling allows programs to store data permanently, read and write large amounts of data, and share data between program runs.
+
+How do you declare and use a file pointer?
+A file pointer is declared as: FILE *fp; It is used to access files for reading, writing, or appending.
+
+List and explain file opening modes in C.
+"r"  - Open for reading (file must exist)
+"w"  - Open for writing (creates new or overwrites existing file)
+"a"  - Open for appending (creates new or appends to existing file)
+"r+" - Open for reading and writing (file must exist)
+"w+" - Open for reading and writing (creates new or overwrites)
+"a+" - Open for reading and appending (creates new or appends)
+
+What is the syntax for opening a file using fopen()?
+FILE *fp = fopen("filename.txt", "mode");
+
+What does fclose() do? Why is it important?
+fclose(fp) closes the file pointed to by fp. It is important to free system resources and ensure data is written to disk.
+
+How do you write to a file using fputc() or fprintf()?
+fputc('A', fp); // writes a character
+fprintf(fp, "Hello %d", num); // writes formatted data
+
+How do you read from a file using fgetc() or fscanf()?
+ch = fgetc(fp); // reads a character
+fscanf(fp, "%d", &num); // reads formatted data
+
+What is the function of feof()?
+feof(fp) returns true if the end of the file has been reached.
+
+What is the use of fseek()? Explain its parameters.
+fseek(fp, offset, origin) moves the file pointer to a specific location. offset: number of bytes, origin: SEEK_SET (start), SEEK_CUR (current), SEEK_END (end).
+
+What does rewind() do in a file?
+rewind(fp) moves the file pointer to the beginning of the file.
+
+What does ftell() return?
+ftell(fp) returns the current position of the file pointer (in bytes from the start).
+
+How are text and binary files different in C?
+Text files store data as readable characters; binary files store data in raw byte format. Binary files are more efficient for non-text data.
+
+How do you handle file errors if fopen() fails?
+Always check if fopen() returns NULL. If so, print an error message and handle the error gracefully.

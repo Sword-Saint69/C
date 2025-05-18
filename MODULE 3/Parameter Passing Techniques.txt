@@ -1,0 +1,14 @@
+
+
+What is pass by value in C?
+
+ In pass by value, a copy of the actual parameter's value is passed to the function. Changes made to the parameter inside the function do not affect the original value.
+
+What is pass by reference in C? 
+
+C does not support pass by reference directly, but you can achieve it by passing the address of variables (using pointers). Changes made to the parameter inside the function affect the original value.
+
+How do formal and actual parameters differ in C functions?
+
+- Actual parameters are the values or variables passed to a function when it is called (in the function call).
+- Formal parameters are the variables defined by the function that receive the values of actual parameters (in the function definition).

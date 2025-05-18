@@ -1,0 +1,25 @@
+How can arrays be passed as function parameters in C? 
+
+In C, arrays can be passed to functions by specifying the array name without an index. This passes the address of the first element of the array (i.e., arrays are always passed by reference). The function parameter can be declared as type arrayName[] or type *arrayName .
+
+Example:
+#include <stdio.h>
+void printArray(int arr[], int size) {
+    int i;
+    for (i = 0; i < size; i++)
+        printf("%d ", arr[i]);
+    printf("\n");
+}
+int main() {
+    int numbers[] = {1, 2, 3, 4, 5};
+    printArray(numbers, 5);
+    return 0;
+}
+
+Explain how arrays are handled in function calls in C
+
+When an array is passed to a function, what is actually passed is the address of its first element. This means:
+
+- The function receives a pointer to the original array.
+- Any changes made to array elements inside the function will affect the original array in the calling function.
+- The size of the array is not automatically known to the function, so it is common to pass the array size as a separate parameter.

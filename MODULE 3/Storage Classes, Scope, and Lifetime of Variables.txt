@@ -1,0 +1,16 @@
+What are storage classes in C programming?
+Storage classes in C define the scope (visibility), lifetime (existence), and linkage (accessibility) of variables and/or functions within a C program.
+
+Explain the scope and lifetime of variables in C.
+- Scope refers to the region of the program where a variable can be accessed (e.g., inside a function, throughout a file, or across multiple files).
+- Lifetime refers to the duration for which a variable exists in memory during program execution (e.g., only while a function runs, or for the entire program).
+
+What are the different types of storage classes in C?
+1. auto: Default for local variables; scope is local to the block, lifetime is during block execution.
+2. register: Suggests storing variable in CPU register for faster access; scope and lifetime are local to the block.
+3. static: Retains value between function calls; scope is local to the block, but lifetime is the entire program.
+4. extern: Used to declare a global variable or function in another file; scope is global, lifetime is the entire program.
+
+How do storage classes affect the scope and lifetime of variables?
+- The storage class determines where a variable can be accessed (scope) and how long it exists in memory (lifetime).
+- For example, a static variable inside a function keeps its value between calls, while an auto variable is reinitialized each time the function is called.

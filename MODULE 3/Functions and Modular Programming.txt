@@ -1,0 +1,62 @@
+What is modular programming, and what are its advantages?
+Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules. Each module contains everything necessary to execute one aspect of the desired functionality. 
+Advantages:
+- Easier to debug and maintain
+- Promotes code reuse
+- Simplifies complex problems by breaking them into smaller parts
+- Enhances collaboration among multiple programmers
+
+Define a function in C programming.
+A function in C is a self-contained block of code that performs a specific task. It can take inputs (parameters), process them, and return an output (return value).
+
+What are the two types of functions in C programming?
+1. Library (standard) functions (e.g., printf, scanf, strlen)
+2. User-defined functions (created by the programmer)
+
+Give examples of standard library functions in C.
+Examples: printf(), scanf(), strlen(), strcpy(), sqrt(), pow(), getchar(), putchar()
+
+What are user-defined functions, and why are they used?
+User-defined functions are functions created by the programmer to perform specific tasks. They are used to avoid code repetition, improve readability, and modularize code.
+
+List the advantages of using user-defined functions.
+- Code reusability
+- Easier debugging and maintenance
+- Improved readability and organization
+- Simplifies complex problems
+
+What are the three parts of a user-defined function?
+1. Function declaration (prototype)
+2. Function definition (body)
+3. Function call
+
+Explain the function declaration or prototype in C.
+A function declaration (prototype) tells the compiler about the function's name, return type, and parameters before its actual definition. It helps in type checking during compilation.
+
+What is the syntax for a function declaration in C?
+return_type function_name(parameter_list);
+
+Example: int add(int, int);
+
+What is a function definition in C?
+A function definition provides the actual body of the function, specifying the statements to be executed.
+
+Describe the components of a function definition.
+- Return type
+- Function name
+- Parameter list (optional)
+- Function body (enclosed in braces)
+
+What is a function call in C?
+A function call is a statement that invokes a function, transferring control to it. After execution, control returns to the calling point.
+
+How is control transferred to a user-defined function in C?
+Control is transferred to a user-defined function when it is called by its name followed by parentheses (with arguments if any).
+
+What are formal and actual parameters in C functions?
+- Formal parameters: Variables defined in the function definition that receive values.
+- Actual parameters: Values or variables passed to the function during the call.
+
+Explain the return statement in C functions.
+The return statement is used to return a value from a function to the calling function and terminate the function's execution.
+
